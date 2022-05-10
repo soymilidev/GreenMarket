@@ -1,0 +1,471 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+
+:root {
+  --v1: #F4F4EC;
+  --v2: #9DAA5A;
+  --v3: #375A59;
+  --v4: #11100E;
+  --v5: rgb(167,160,160);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  color: inherit;
+  text-decoration: none
+}
+
+
+/*Promo*/
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .5rem 1.25rem;
+  font-size: .75rem;
+  background-color: var(--v1); 
+  color: var(--v4);
+}
+
+.languages {
+  display: flex;
+  gap: .625rem;
+}
+
+.languages select {
+  font-size: .75rem;
+}
+
+
+/*Nav*/
+.header-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .625rem 1.25rem;
+  font-size: 1rem;
+  background-color: var(--v2);
+}
+
+.header-title {
+  display: flex;
+  align-items: center;
+  gap: .625rem;
+}
+
+.header-title a {
+  display: inline-block;
+  font-weight: normal;
+  font-size: 1.5rem;
+  color: var(--v1);
+}
+
+.nav-list .list-item {
+  display: inline-block;
+  padding: .3125rem; 
+}
+
+.nav-list a {
+  color: var(--v1);
+  text-decoration: none
+}
+
+.nav-list a:hover {
+  color: var(--v3); 
+}
+
+.items {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  gap: 1.875rem;
+  font-size: 1rem;
+  list-style: none
+}
+
+.items a {
+  color: var(--v1);
+}
+
+.items a:hover {
+  color: var(--v4);
+}
+
+.menu-mobile {
+  display: none;
+}
+
+
+/*Slide*/
+.slide-container {
+  background: url("../img/bg_caroline-attwood.jpg");
+  background-position: center; /*background-repeat: no-repeat;*/
+  background-size: cover;
+}
+
+.slide-flex-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: space-between;
+  align-items: center;
+  width: 100vw; /*anchura del 100% de la anchura de la ventana gráfica*/
+  height: 75vh; 
+  color: white;
+}
+
+h1 {
+  font-size: 2.8125rem;
+  line-height: 3.4375rem;
+  text-shadow: .125rem .125rem .125rem rgba(0,0,0,.5);
+}
+
+.slide-flex-container p {
+  font-size: 1.125rem;
+  text-shadow: .125rem .125rem .125rem rgba(0,0,0,.5);
+}
+
+.slide-flex-container .slide-button {
+  position: relative;
+  padding: .625rem .9375rem;
+  font-size: .875rem;
+  font-style: normal;
+  color: var(--v1); 
+  cursor: pointer;
+  background-color: var(--v2);
+  border: none;
+  border-radius: .3125rem;
+  box-shadow: .125rem .125rem .125rem rgb(34,34,34,.5);
+}
+
+.slide-button a {
+  color: inherit; 
+}
+
+
+/*Featured*/
+.featured {
+  position: relative;
+  text-align: center;
+}
+
+.featured i {
+  margin-top: 1.875rem;
+  font-size: 2.5rem;
+  color: var(--v2); 
+}
+
+.featured h2 {
+  margin-top: .625rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--v3); 
+}
+
+.featured span {
+  font-size: 1rem;
+  line-height: 1.875rem;
+  word-spacing: .125rem;
+  color: rgb(102,102,102); 
+}
+
+
+/*Cards*/
+.container-card {
+  /*width: 100vw;*/
+  /*height: 100vh;*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin: .625rem 0 3.125rem;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 18.75rem;
+  grid-template-rows: 11.25rem 13.125rem 5rem;
+  grid-template-areas: "image" "description" "price";
+  margin:1.875rem;
+  font-family: roboto;
+  text-align: center;
+  border-radius: .9375rem;
+  background: #F4F4EC;
+  box-shadow: .3125rem .3125rem .9375rem rgba(0,0,0,0.3);
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: .3125rem .3125rem .9375rem rgba(0,0,0,0.3);
+}
+
+
+/*Image*/
+.card-image {
+  grid-area: image;
+  /*background: url("../img/producto-ajos.jpg");*/
+  border-top-left-radius: .9375rem;
+  border-top-right-radius: .9375rem;
+  background-size: cover;
+}
+
+.image1 {
+  background: url("../img/producto-ajos.jpg");
+}
+
+.image2 {
+  background: url("../img/producto-zanahorias.jpg");
+}
+
+.image3 {
+  background: url("../img/producto-huevos.jpg");
+}
+
+/*Description*/
+.card-description {
+  grid-area: description;
+  margin: 1.5625rem;
+  color: #375A59;
+}
+
+.classification {
+  font-size:.8125rem;
+  color: #FF9B63;
+}
+
+.card-description h2 {
+  margin-top:0rem;
+  font-size:1.75rem;
+}
+
+.card-description p {
+  margin: 1.25rem auto !important; 
+  color: grey;
+  font-size:15px;
+  font-weight: 300;
+}
+
+/*Price*/
+.card-price {
+  grid-area: price; 
+  display: grid;
+  grid-template-columns: 1fr;
+  /*grid-template-rows: 1fr;*/
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-bottom-left-radius: .9375rem;
+  border-bottom-right-radius: .9375rem;
+  background: #9DAA5A;
+  border: none;
+}
+
+.value {
+  font-size:1.375rem;
+  font-weight: 500;
+}
+
+.type {
+  font-size:.6875rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+
+/*Newsletter*/
+.subscription-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: .625rem 1.25rem;
+  font-weight: 500;
+  background-color: var(--v3);
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  gap: .5rem;
+}
+
+.subscription-container span {
+  color: var(--v1);
+}
+
+.subscription-container input {
+  width: 16.875rem;
+  height: 2.5rem;
+  padding: .625rem;
+  font-size: .75rem;
+  background-color: var(--v1);
+  border: none;
+  border-radius: .625rem;
+}
+
+.subscription-container button {
+  padding: .625rem;
+  color: white;
+  font-size: 12px;
+  background-color: var(--v2);
+  border-radius: .625rem;
+  border: none;
+}
+
+.envelope i {
+  font-size: 1.25rem;
+  color: var(--v2);
+}
+
+
+/*--------Footer-Contact--------*/
+.footer-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  color: rgb(167,160,160);
+  background-color: var(--v4); 
+}
+
+.footer-nav-list {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.footer-navbar a {
+  color: rgb(167,160,160);
+}
+
+.footer-navbar a:hover {
+  color: var(--v2);
+}
+
+.footer-nav-list i {
+  padding: 5px;
+}
+
+
+/*--------Footer-Copyright--------*/
+
+.copyright {
+  width: 100%;
+  height: 20px; 
+  padding: 4px;
+  font-size: 10px;
+  color: white;
+  text-align: center;
+  background: rgba(34,34,34);
+}
+
+
+
+
+
+@media (max-width: 36rem) {/*576px*/
+
+  
+/*Promo*/
+.header-container {
+  display: none;
+}
+
+.header-title a {
+  font-size: 1.2rem;
+}
+
+.header-title img {
+  height: 30%;
+  width: 30%;
+}
+
+
+/*Nav*/
+.nav-list {
+  display: none;
+}
+
+.items {
+  display: none;
+}
+
+.menu-mobile {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: var(--v1); 
+}
+
+
+/*Slide*/
+.slide-flex-container {
+  width: 100vw;
+  height: 50vh; 
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 3.125rem;
+}
+
+.slide-flex-container p {
+  font-size: 1.1rem;
+}
+
+.slide-flex-container .slide-button {
+  padding: .625rem .625rem;
+  font-size: .8125rem;
+}
+
+/*Featured*/
+.featured i {
+  font-size: 2rem;
+}
+
+.featured h2 {
+  font-size: 2.1875rem;
+}
+
+.featured span {
+  font-size: 1rem;
+  line-height: 1.875rem;
+  word-spacing: .125rem;
+}
+
+
+/*Cards*/
+.container-card {
+  display: flex;
+  flex-direction: column;
+}
+
+
+/*Newsletter*/
+.subscription-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: .5rem;
+}
+
+.subscription-container input {
+  width: 15rem;
+  height: 2.2rem;
+}
+
+.footer-navbar {
+  display: flex;
+  flex-direction: column-reverse;
+  text-align: center;
+  padding: 1rem;
+}
+
+}

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title>GreenMarket</title>
+</head>
+
+
+<body>
+<header>
+    <!-------- Promo -------->
+    <div class="header-container">
+        <a href="#">Descuentos del 20% con el código GREEN</a>     
+        
+            <div class="languages">
+                <select>
+                    <option>Español</option>
+                    <option>English</option>
+                </select>
+                <select>
+                    <option>ARG$</option>
+                    <option>US$</option>
+                </select>
+        </div>
+    </div>
+
+    <!-------- Nav -------->
+    <nav class="header-navbar">
+    <div class="header-title">
+        <img src="img/Logo_Market.png" alt="Logo">
+        <a href="#">GreenMarket</a>
+    </div>
+
+    <ul class="nav-list">
+        <li class="list-item"><a href="#">Almacén</a></li>
+        <li class="list-item"><a href="#">Bebidas</a></li>
+        <li class="list-item"><a href="#">Heladera</a></li>
+        <li class="list-item"><a href="#">Cosmética</a></li>
+        <li class="list-item"><a href="#">Suplementos</a></li>
+        <li class="list-item"><a href="#">Hogar</a></li>
+        <li class="list-item"><a href="#">Ofertas</a></li>
+    </ul>
+
+    <ul class="items">
+        <li><a href="#"><i class="fas fa-search"></i></a></li>
+        <li><a href="#"><i class="fas fa-user-alt"></i></a></li>
+        <li><a href="#"><i class="fas fa-shopping-basket"></i></a></li>
+        
+    </ul>
+
+    <div class="menu-mobile"><i class="fas fa-bars"></i></div>
+    </nav>
+</header>
+
+
+    <!-------- Slide -------->
+    <main>
+        <div class="slide-container">
+            <div class="slide-flex-container">
+                <h1>¡Nuevos ingresos!</h1>
+                    <p>Todo lo que necesitas para vivir bien</p>
+                        <br>
+                        <a class="slide-button" href="#">Comprar</a>
+            </div>
+        </div>
+
+
+    <!-------- Featured -------->
+    <section class="featured">
+        <i class="fab fa-pagelines fa-spin"></i>
+            <h2>Nuestros Destacados</h2>
+                <span> Encontrá productos de estación ¡Y más! </span>
+    </section>
+
+
+    <!-------- Cards -------->
+    <div class="container-card">
+        <!-------- 1 -------->
+        <div class="card">
+        <div class="card-image image1"></div>
+        
+        <div class="card-description">
+            <span class="classification">Hortalizas</span>
+            <h2>Ajo Orgánico</h2>
+            <p>Obtenido por agricultores que utilizan insumos de origen natural evitando el uso de pesticidas y fertilizantes de origen químico.</p>
+        </div>
+        
+        <div class="card-price">
+            <a class="price" href="#">
+            <div class="value">$75</div>
+            <div class="type">por unidad</div>
+            </a>
+        </div>
+        </div>
+        
+        <!-------- 2 -------->
+        <div class="card">
+            <div class="card-image image2"></div>
+            
+            <div class="card-description">
+                <span class="classification">Hortalizas</span>
+                <h2>Zanahorias</h2>
+                <p>Producto agroecológico. Como alimento tiene un alto valor nutricional por su contenido en carbohidratos, vitaminas y minerales.</p>
+            </div>
+        
+            <div class="card-price">
+                <a class="price" href="#">
+                <div class="value">$140</div>
+                <div class="type">1 k.</div>
+                </a>
+            </div>
+            </div>
+        
+        <!-------- 3 -------->
+        <div class="card">
+        <div class="card-image image3"></div>
+        
+        <div class="card-description">
+            <span class="classification">Huevos</span>
+            <h2>Huevos</h2>
+            <p>Producto orgánico certificado. Huevos de campo de gallinas criadas en libertad. Pastorean todos los días, todo el día.</p>
+        </div>
+        
+        <div class="card-price">
+            <a class="price" href="#">
+            <div class="value">$240</div>
+            <div class="type">6 unidades</div>
+            </a>
+        </div>
+        </div>
+        </div>
+
+
+    <!-------- Newsletter -------->
+    <section class="subscription-container">
+        <div class="envelope">
+            <i class="far fa-envelope"></i>
+                <span>Suscríbete para más novedades</span>
+        </div>
+
+        <form action="/registro" method="post">
+            <!-- Email -->
+            <input class="controls" type="email" name="correo electrónico" value="" placeholder=" Ingresá tu correo electrónico" required="">
+            <!-- Submit -->
+            <button type="submit"><a href="#">Suscribirme</a></button>
+        </form>
+        </div>
+    </section>
+</main>
+
+
+    <!-------- Fotter-Contact -------->
+<footer>
+    <nav class="footer-navbar">
+        <ul class="footer-nav-list">
+            <li class="footer-list-item"><i class="fas fa-map-marked-alt"></i><a href="link">Av. Sarmiento 2704, CABA.</a></li>
+            <li class="footer-list-item "><i class="far fa-envelope"></i><a href="link">hola@greenmarket.com.ar</a></li>
+            <li class="footer-list-item "><i class="fab fa-whatsapp"></i><a href="link">11 4777 5557</a></li>
+        </ul>
+
+        <div> 
+            <a href="#"><img class="logo" src="img/Logo_Market.png" alt="Logo"></a>
+        </div>
+        </nav>
+
+    <section class="copyright">
+        <p>Copyright © 2021 MilagrosCastro. All rights reserved.</p>
+    </section>
+</footer>
+
+</body>
+</html>
